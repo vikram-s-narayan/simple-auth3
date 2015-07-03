@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'simple-auth3',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://authentica3.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

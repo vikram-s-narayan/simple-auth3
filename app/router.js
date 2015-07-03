@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('signup');
+  this.route('protectedpage');
+  this.route('login');
+  this.route('survey');
+  this.route('user', {path: '/:userId'});
 });
 
 export default Router;

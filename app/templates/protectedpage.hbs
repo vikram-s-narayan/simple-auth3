@@ -1,0 +1,5 @@
+{{#if session.isAuthenticated}}
+ If you can see this, you are authenticated.
+  {{else}}
+  You are not authorized to see this. Click here for {{#link-to 'signup'}}signup{{/link-to}}.
+{{/if}}
